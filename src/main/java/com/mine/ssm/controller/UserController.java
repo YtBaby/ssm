@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import java.lang.reflect.Method;
 
 /**
  * Created by LiJiaXin on 2018/3/26.
@@ -27,6 +26,7 @@ public class UserController {
     public String showAllUser(HttpServletRequest request, Model model){
         int userId = Integer.parseInt(request.getParameter("id"));
         User user = userService.getUserById(userId);
+        model.addAttribute("user",user);
         model.addAttribute("user",user);
         return "showUser";
     }

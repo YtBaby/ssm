@@ -171,6 +171,19 @@
             <version>1.3.2</version>
         </dependency>
 
+        <!--定时任务包-->
+        <dependency>
+            <groupId>opensymphony</groupId>
+            <artifactId>quartz-all</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+            <version>1.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
